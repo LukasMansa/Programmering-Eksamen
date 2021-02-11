@@ -1,1 +1,1 @@
-//TODO class der definerer et spøgelse
+//TODO class der definerer et spøgelseshort 
