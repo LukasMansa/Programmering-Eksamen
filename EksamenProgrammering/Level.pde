@@ -24,8 +24,7 @@ void drawWallPiece(){
   fill(c);
   rect(xpos+=20,ypos,rectSizeX,rectSizeY);
   if (xpos == width){
-   ypos = ypos +20;
-   xpos = xpos += 20 *-1;
+ println("øl");
   }
 }
 }
