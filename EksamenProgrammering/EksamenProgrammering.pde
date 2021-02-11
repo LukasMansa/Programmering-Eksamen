@@ -1,10 +1,24 @@
+PacMan man;
 
 void setup() {
-  size(800,900);
-  background(255);
+  size(800, 900);
   //TODO inkluder PacMan, spøgelser og andre objekter her, når de er kodet
+  man = new PacMan();
 }
 
-void draw() {
-  
+void draw() { 
+  background(0, 0, 200);
+  man.render();
+}
+
+void keyPressed() {
+  if (key == 'w') {
+    man.moveUp();
+  } else if (key == 's') {
+    man.moveDown();
+  } else if (key == 'a') {
+    man.moveLeft();
+  } else if (key == 'd') {
+    man.moveRight();
+  }
 }
