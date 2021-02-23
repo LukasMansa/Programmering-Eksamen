@@ -19,7 +19,7 @@ class PacMan {
     fill(255, 255, 0);
     ellipse(xPos, yPos, r, r);
     fill(0, 0, 0);
-    ellipse(xPos*1.03, yPos/1.02, r/5, r/5); //Hans øje er underligt men det skal lige fikses. 
+    ellipse(xPos+15, yPos-5, r/5, r/5);  
   }
 
   void moveUp() {
