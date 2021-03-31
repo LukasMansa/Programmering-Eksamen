@@ -3,7 +3,6 @@ Ghost gos;
 
 void setup() {
   size(800, 900);
-  //TODO inkluder PacMan, spøgelser og andre objekter her, når de er kodet
   man = new PacMan();
   gos = new Ghost();
 }
@@ -24,5 +23,8 @@ void keyPressed() {
     man.moveLeft();
   } else if (key == 'd') {
     man.moveRight();
+  }
+  while (key == 'p') {
+   gos.move(); 
   }
 }

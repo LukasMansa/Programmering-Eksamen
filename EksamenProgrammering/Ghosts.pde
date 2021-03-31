@@ -1,4 +1,3 @@
-//TODO class der definerer et spøgelse
 class Ghost {
   int s;
   int r;
@@ -19,5 +18,10 @@ class Ghost {
     fill(50, 50, 50);
     ellipse(xPos, yPos, r, r);
     fill(0, 0, 0);
+  }
+  
+  void move() {
+    xPos = xPos + random(5, 15);
+    yPos = yPos + random(1, 15);
   }
 }

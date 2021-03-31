@@ -1,4 +1,3 @@
-//TODO Her defineres PacMan
 class PacMan {
   int s;
   int r;
