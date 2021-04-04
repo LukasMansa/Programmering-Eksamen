@@ -10,8 +10,6 @@ void setup() {
 void draw() { 
   background(0, 0, 200);
   man.render();
-  gos.render();
-  
 }
 
 void keyPressed() {
