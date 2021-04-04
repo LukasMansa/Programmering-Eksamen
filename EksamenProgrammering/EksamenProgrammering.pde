@@ -1,6 +1,6 @@
 PacMan man;
 Ghost gos;
-
+WallPiece wall = new WallPiece();
 void setup() {
   size(800, 900);
   man = new PacMan();
@@ -8,12 +8,11 @@ void setup() {
 }
 
 void draw() { 
-  background(0, 0, 200);
+  background(0, 0, 1);
   man.render();
   gos.render();
-  
+  wall.draw();
 }
-
 void keyPressed() {
   if (key == 'w') {
     man.moveUp();
